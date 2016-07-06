@@ -26,8 +26,8 @@ public class Main {
     staticFileLocation("/public");
 
     get("/hello", (req, res) -> {
-	    RelativisticModel.select();
-	    
+           RelativisticModel.select();
+    
 	    String energy = System.getenv().get("ENERGY");
 	    
 	    Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
