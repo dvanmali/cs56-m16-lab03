@@ -32,6 +32,8 @@ public class Main {
 		return "E=mc^2: " + energy + " = " + m.toString();
 	    });
 
+	get("/ucsb", (req, res) -> "Go Gauchos");
+
 	get("/", (request, response) -> {
 		Map<String, Object> attributes = new HashMap<>();
 		attributes.put("message", "Hello World!");
